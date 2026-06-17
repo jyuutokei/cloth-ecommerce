@@ -16,6 +16,7 @@
     <main class="mx-auto max-w-400 w-[90%] mt-10">
         {{ $slot }}
     </main>
+    <x-footer />
 </body>
 
 </html>
