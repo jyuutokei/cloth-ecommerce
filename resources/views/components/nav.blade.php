@@ -1,8 +1,8 @@
 <div class="navbar mt-10 max-w-400 w-[90%] mx-auto shadow-md px-5">
     <div class="flex-1">
-        <a class="btn btn-ghost text-xl">Home</a>
-        <a class="btn btn-ghost text-xl">Collections</a>
-        <a class="btn btn-ghost text-xl">New</a>
+        <a href="{{ route("home") }}" class="btn btn-ghost text-xl hover:bg-neutral hover:text-white">Home</a>
+        <a href="#" class="btn btn-ghost text-xl hover:bg-neutral hover:text-white">Collections</a>
+        <a href="#" class="btn btn-ghost text-xl hover:bg-neutral hover:text-white">New</a>
     </div>
     <div class="logo flex-1"></div>
     <div class="flex-none flex gap-4">
