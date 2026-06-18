@@ -27,19 +27,20 @@
                     alt="Fashion model wearing new summer collection">
             </div>
             <div class="flex row-start-2 place-items-end-safe justify-between">
-                <a role="button" class="inline-flex items-center justify-between px-6 py-2 bg-altgray w-50 md:w-2xs">
+                <a role="button" href="{{ route("products") }}"
+                    class="btn shrink justify-between px-6 py-2 bg-altgray w-50 md:w-2xs cursor-pointer group hover:bg-neutral hover:text-white">
                     Go To Shop
                     <x-icons.arrow />
                 </a>
-                <x-buttons.pagination-btn class="hidden my-1 ml-7" />
+                <x-buttons.pagination-btn class="hidden ml-7" />
             </div>
         </div>
         <div class="mt-35">
             <div class="flex justify-between items-end-safe">
                 <h2 class="font-extrabold text-6xl md:text-5xl lg:text-5xl xl:text-6xl">NEW <br> THIS WEEK</h2>
-                <span class="text-gray-500">See All</span>
+                <a href="#" class="text-gray-500 link-hover">See All</a>
             </div>
-            <div class="flex items-center-safe gap-6 p-1">
+            <div class="overflow-hidden flex items-center-safe gap-6 p-1">
                 <x-card class="max-h-85" />
                 <x-card class="max-h-85" />
                 <x-card class="max-h-85" />
@@ -57,26 +58,26 @@
             <div class="mt-15">
                 <div class="flex justify-between items-end">
                     <div class="flex gap-10">
-                        <span>(ALL)</span>
-                        <span class="text-gray-500">Men</span>
-                        <span class="text-gray-500">Women</span>
-                        <span class="text-gray-500">Kids</span>
+                        <a href="#" class="hover:underline">(ALL)</a>
+                        <a href="#" class="text-gray-500 link-hover">Men</a>
+                        <a href="#" class="text-gray-500 link-hover">Women</a>
+                        <a href="#" class="text-gray-500 link-hover">Kids</a>
                     </div>
                     <div>
-                        <p class="text-gray-500">Less to More</p>
-                        <p class="text-gray-500">More to Less</p>
+                        <a href="#" class="block text-gray-500 link-hover">Less to More</a>
+                        <a href="#" class="block text-gray-500 link-hover">More to Less</a>
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="flex items-center-safe gap-10 p-1">
+                <div class="overflow-hidden flex items-center-safe gap-10 p-1">
                     <x-card class="max-h-100" />
                     <x-card class="max-h-100" />
                     <x-card class="max-h-100" />
                 </div>
             </div>
             <div class="flex justify-center mt-5">
-                <button class="flex flex-col justify-center items-center cursor-pointer">
-                    <p class="text-gray-500 -mb-2">More</p>
+                <button class="btn bg-transparent flex-col cursor-pointer group hover:bg-neutral">
+                    <p class="text-gray-500 -mb-2 group-hover:text-white">More</p>
                     <x-icons.angle-arrow direction="down" />
                 </button>
             </div>
@@ -95,7 +96,7 @@
                     stands the test
                     of time each design is meticulously crafted, ensuring the highest quelity exqulsite finish</p>
             </div>
-            <div class="mt-8 flex gap-6">
+            <div class="mt-8 flex overflow-hidden gap-6">
                 <img class="max-w-87.5 max-h-112.5 object-cover border"
                     src="{{ Vite::asset('resources/images/fashion-models/alameenng.webp') }}"
                     alt="Fashion model wearing new summer collection">
