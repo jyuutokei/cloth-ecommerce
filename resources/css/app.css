@@ -48,6 +48,12 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+@layer base {
+    html {
+        font-size: clamp(10px, 1.4vw, 18px);
+    }
+}
+
 @layer components {
     .bg-layer {
         @apply fixed top-0 left-0 w-dvw h-dvh -z-1 bg-no-repeat bg-cover bg-center;
