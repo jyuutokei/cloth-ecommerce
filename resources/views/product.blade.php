@@ -6,7 +6,7 @@
     <div class="min-w-0 h-dvh flex justify-center items-center">
         <div class="flex justify-center items-center">
             <div class="border mr-10">
-                <img class="w-full max-h-100 aspect-3/4 object-cover"
+                <img class="flex-1 w-full max-h-100 aspect-3/4 object-cover"
                     src="{{ Vite::asset('resources/images/fashion-models/alameenng.webp') }}"
                     alt="Fashion model wearing new summer collection">
             </div>
@@ -33,13 +33,13 @@
                 <small class="text-gray-500">MRP incl. of all taxes</small>
                 <p class="my-10">Relaxed-fit shirt. Camp collar and short sleeves. Button-up front.</p>
                 <div>
-                    <p>Color</p>
+                    <p>Variants</p>
                     <x-buttons.tabs-product>
-                        <a role="tab" class="tab tab-active bg-amber-500"></a>
-                        <a role="tab" class="tab bg-red-500"></a>
-                        <a role="tab" class="tab bg-blue-500"></a>
-                        <a role="tab" class="tab bg-green-500"></a>
-                        <a role="tab" class="tab bg-yellow-500"></a>
+                        <a role="tab" class="tab tab-active"></a>
+                        <a role="tab" class="tab"></a>
+                        <a role="tab" class="tab"></a>
+                        <a role="tab" class="tab"></a>
+                        <a role="tab" class="tab"></a>
                     </x-buttons.tabs-product>
                 </div>
                 <div>
@@ -52,7 +52,7 @@
                         <a role="tab" class="tab">XL</a>
                     </x-buttons.tabs-product>
                 </div>
-                <button class="btn bg-altgray w-full mt-4 hover:bg-neutral hover:text-white">
+                <button class="btn bg-altgray w-full mt-4">
                     ADD
                 </button>
             </div>
