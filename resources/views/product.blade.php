@@ -27,10 +27,10 @@
                     src="{{ Vite::asset('resources/images/fashion-models/alameenng.webp') }}"
                     alt="Fashion model wearing new summer collection">
             </div>
-            <div class="border px-15 pb-5 pt-20">
+            <div class="border p-15">
                 <h1 class="font-bold text-lg">ABSTRACT PRINT SHIRT</h1>
                 <p>$99</p>
-                <small class="text-gray-500">MRP incl. of all taxes</small>
+                <small class="text-gray-500 font-light">MRP incl. of all taxes</small>
                 <p class="my-10">Relaxed-fit shirt. Camp collar and short sleeves. Button-up front.</p>
                 <div>
                     <p>Variants</p>
