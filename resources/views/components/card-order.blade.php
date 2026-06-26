@@ -1,7 +1,7 @@
 <div class="border p-6">
     <div class="flex gap-4">
         <div>
-            <figure class="max-w-31 aspect-3/4">
+            <figure class="max-w-29 aspect-3/4">
                 <img class="w-full h-full object-cover"
                     src="{{ Vite::asset('resources/images/fashion-models/alameenng.webp') }}"
                     alt="Fashion model wearing new summer collection">
