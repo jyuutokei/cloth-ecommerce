@@ -1,4 +1,4 @@
-<footer class="relative bg-altgray p-60 mt-55">
+<footer class="{{ str_contains(url()->current(), "product") ? "hidden" : "block" }} relative bg-altgray p-60 mt-55">
     <div>
         <div>
             <p class="text-gray-500 mb-5 font-light">INFO</p>
