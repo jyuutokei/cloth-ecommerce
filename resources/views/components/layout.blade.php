@@ -11,7 +11,7 @@
 <body>
     <div class="bg-layer"></div>
     <x-nav />
-    <main class="min-w-0 mx-auto max-w-400 w-[90%] mt-10">
+    <main class="min-w-0 mx-auto w-[90%] mt-10 {{ str_contains(url()->current(), "product") ? "" : "container" }}">
         {{ $slot }}
     </main>
     <x-footer />
