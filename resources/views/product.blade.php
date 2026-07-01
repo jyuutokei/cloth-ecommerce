@@ -2,7 +2,9 @@
     <x-slot:title>
         Product
     </x-slot:title>
+    @section('body-class', 'product-page')
 
+    <x-nav-product />
     <div class="min-w-0 mt-125 lg:mt-25 flex justify-center lg:items-center">
         <div class="flex-1 flex flex-col lg:flex-row lg:justify-center lg:items-center">
             <div class="absolute inset-0 lg:relative lg:border lg:mr-10">
