@@ -8,10 +8,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="@yield('body-class')">
     <div class="bg-layer"></div>
     <x-nav />
-    <main class="min-w-0 mx-auto w-[90%] mt-10 {{ str_contains(url()->current(), "product") ? "" : "container" }}">
+    <main class="min-w-0 mx-auto w-[90%] mt-10 max-w-400">
         {{ $slot }}
     </main>
     <x-footer />
