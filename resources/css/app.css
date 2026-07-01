@@ -59,7 +59,10 @@
         @apply fixed top-0 left-0 w-dvw h-dvh -z-1 bg-no-repeat bg-cover bg-center;
         background-image: url('../images/noisy-background.png');
     }
-
+    .bg-layer-nav {
+        @apply bg-no-repeat bg-cover bg-center;
+        background-image: url('../images/noisy-background.png');
+    }
     .logo {
         @apply bg-contain bg-no-repeat;
         width: 40px;
