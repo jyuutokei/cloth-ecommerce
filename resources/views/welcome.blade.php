@@ -2,6 +2,7 @@
     <x-slot:title>
         Home
     </x-slot:title>
+    @section('body-class', 'home-page')
 
     <div class="min-w-0 mt-20">
         <div class="sm:flex sm:justify-center lg:justify-start">
@@ -30,10 +31,10 @@
             </div>
             <div class="flex row-start-2 place-items-end justify-center lg:justify-start">
                 <div class="aura">
-                    <a role="button" href="{{ route("products") }}"
+                    <a role="button" href="{{ route("shop") }}"
                         class="btn shrink justify-between px-6 py-2 bg-altgray w-50 md:w-2xs cursor-pointer group">
                         Go To Shop
-                        <x-icons.arrow />
+                        <x-icons.arrow class="h-[2em]" />
                     </a>
                 </div>
             </div>
