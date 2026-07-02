@@ -8,6 +8,11 @@ import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+Alpine.start();
+
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
 if (document.body.classList.contains('home-page')) {
@@ -48,9 +53,9 @@ if (document.body.classList.contains('product-page')) {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
-            navProduct.classList.add('bg-layer-nav', 'bg-[#E8E7E6]', 'shadow-md');
+            navProduct.classList.add('bg-layer-component', 'shadow-md');
         } else {
-            navProduct.classList.remove('bg-layer-nav', 'bg-[#E8E7E6]', 'shadow-md');
+            navProduct.classList.remove('bg-layer-component', 'shadow-md');
         }
     });
 }
